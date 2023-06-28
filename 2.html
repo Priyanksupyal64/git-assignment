@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        html,body{
+            background-color: black;
+            display: flex;
+            justify-content: center;  
+        }
+        form{
+            width: 400px;
+            height: 450px;
+            border: 1px black solid;
+            display: flex;
+            flex-direction: column;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             padding: 10px;
+             border-radius: 5px;
+             background-color:white;
+             margin-top: 100px;
+               line-height: 3;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: -20px;
+            margin-top: -10px;
+        }
+        input{
+            margin-top: -10px;
+            width: 400px;
+        }
+        select{
+            margin-top: -10px;
+            padding: 5px 10px;
+        }
+        button{
+            margin-top: 10px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 5px 0px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="signup"method="get">
+                <h1>Signup</h1>
+                Name:
+            <input type="text" name="username" id="username">
+            Batch:
+            <select>
+                <option value="sigma 2.0">
+                    sigma 2.0
+                </option>
+            </select>
+            Age:
+            <input type="text" name="age" id="age">
+            Email:
+            <input type="email" name="email" id="email">
+            Password:
+            <input type="password" name="password" id="password">
+            <button>Signup</button>
+    </form>
+    </body>
+    </html>
